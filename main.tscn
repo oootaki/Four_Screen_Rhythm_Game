@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bmpbw7p3bvqh7"]
+
+[ext_resource type="Script" uid="uid://c77b0o1qu75vq" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://fpu7jbimytvw" path="res://scripts/music_controller.gd" id="2_music"]
+[ext_resource type="Script" uid="uid://bov12jkjec56e" path="res://scripts/input_controller.gd" id="3_input"]
+
+[node name="Main" type="Node2D" unique_id=68904831]
+script = ExtResource("1_main")
+
+[node name="MusicController" type="Node" parent="." unique_id=1697630277]
+script = ExtResource("2_music")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MusicController" unique_id=28113822]
+
+[node name="InputController" type="Node" parent="." unique_id=803714346]
+script = ExtResource("3_input")
